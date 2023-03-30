@@ -1,0 +1,14 @@
+"ACCESS_TOKEN_LIFETIME": timedelta(minutes=5),
+🔝 that means when we sign up and login we would have token itself which lifetime is 5 minutes here
+after 5 minut user must login or sign up again
+"REFRESH_TOKEN_LIFETIME": timedelta(days=80),
+🔝 that means when we sign up or login refresh token would be available here. that help to longer our lifetime
+in website. in short that prolongs access to the website we are surfing
+"ROTATE_REFRESH_TOKENS": False,
+🔝that means if we are still in the website after 80 days that would create new access token for us
+
+
+"BLACKLIST_AFTER_ROTATION": True,
+'rest_framework_simplejwt.token_blacklist', in settings INSTALLED_APPS section to be added
+lastly give migrate command
+🔝that means after we get refresh token we cannot use it again twice. new refresh token should be used

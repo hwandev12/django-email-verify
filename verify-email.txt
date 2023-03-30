@@ -1,0 +1,3 @@
+first thing to start is to create custom user to have email as the main login part. models.py is the source of code
+
+next thing is to create serializer for registration. source of code is available in serializers.py file
